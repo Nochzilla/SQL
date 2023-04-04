@@ -1,0 +1,21 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, gender TEXT, size INTEGER, quantity INTEGER, price INTEGER);
+INSERT INTO store VALUES (1, "S/S Tee", "F", "L", 12, 10);
+INSERT INTO store VALUES (2, "S/S Tee", "F", "M", 12, 9);
+INSERT INTO store VALUES (3, "S/S Tee", "F", "s", 24, 8);
+INSERT INTO store VALUES (4, "L/S Tee", "F", "L", 6, 10);
+INSERT INTO store VALUES (5, "L/S Tee", "F", "M", 12, 9);
+INSERT INTO store VALUES (6, "L/S Tee", "F", "S", 0, 8);
+INSERT INTO store VALUES (7, "S/S Tee", "M", "XL", 12, 12);
+INSERT INTO store VALUES (8, "S/S Tee", "M", "L", 12, 11);
+INSERT INTO store VALUES (9, "S/S Tee", "M", "M", 12, 10);
+INSERT INTO store VALUES (10, "S/S Tee", "M", "S", 6, 10);
+INSERT INTO store VALUES (11, "L/S Tee", "M", "XL", 24, 20);
+INSERT INTO store VALUES (12, "L/S Tee", "M", "L", 12, 18);
+INSERT INTO store VALUES (13, "L/S Tee", "M", "M", 6, 18);
+INSERT INTO store VALUES (14, "L/S Tee", "M", "S", 12, 15);
+INSERT INTO store VALUES (15, "Beanie", "Uni", "U", 24, 12);
+SELECT * FROM store;
+
+--display the database ordered by price descending 
+SELECT * FROM store
+ORDER BY price desc; 
